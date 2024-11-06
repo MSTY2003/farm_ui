@@ -12,8 +12,10 @@
     "@fortawesome/fontawesome-free": "^6.6.0",
     "@fortawesome/vue-fontawesome": "^3.0.8",
     "core-js": "^3.8.3",
+    "echarts": "^5.5.1",
     "element-plus": "^2.8.5",
     "vue": "^3.2.13",
+    "vue-echarts": "^7.0.3",
     "vue-router": "^4.0.3"
   },
   "devDependencies": {
@@ -45,12 +47,16 @@
       "parser": "@babel/eslint-parser"
     },
     "rules": {
-      "space-before-function-paren": ["error", "never"],
-      "space-before-blocks":"off",
-      "comma-dangle":"off",
-      "semi":"off",
-      "spaced-comment":"off",
-      "vue/multi-word-component-names":"off"
+      "space-before-function-paren": [
+        "error",
+        "never"
+      ],
+      "space-before-blocks": "off",
+      "comma-dangle": "off",
+      "semi": "off",
+      "spaced-comment": "off",
+      "vue/multi-word-component-names": "off",
+      "camelcase":"off"
     }
   },
   "browserslist": [
