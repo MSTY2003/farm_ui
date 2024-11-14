@@ -328,7 +328,7 @@ onUnmounted(() => {
 .chart-container {
   display: flex;           // 使用flex布局
   justify-content: space-between; // 让图表之间有间距
-  padding: 0.5vw 0 0 0;
+  padding: 0.3vw 0 0 0;
   width: 100%;
 }
 

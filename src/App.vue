@@ -44,10 +44,16 @@ export default {
     changeView(index) {
       // 根据当前选中的索引，构建路由路径
       let routePath = '';
-      if (index === '1') {
-        routePath = '/home'; // 假设概览的路由路径为 /overview
+      switch (index) {
+        case '1':
+          routePath = '/';
+          break;
+        case '2-1':
+          routePath = '/landDataAnalysis';
+          break;
       }
-
+      console.log(`currentIndex: ${index}`); // 打印输出当前选中的索引
+      console.log(`routePath: ${routePath}`); // 打印输出构建的路由路径
       // 使用 Vue Router 进行跳转
       if (routePath) {
         this.$router.push(routePath);

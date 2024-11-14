@@ -1,6 +1,6 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-// import LandDataAnalysis from '../views/LandDataAnalysis.vue'
+import LandDataAnalysis from '../views/LandDataAnalysis.vue'
 // import LandMonitoring from '../views/LandMonitoring.vue'
 // import CropDistribution from '../views/CropDistribution.vue'
 // import VarietyManagement from '../views/VarietyManagement.vue'
@@ -20,11 +20,11 @@ const routes = [
     name: 'home',
     component: HomeView // 概览页面
   },
-  // {
-  //   path: '/land-data-analysis',
-  //   name: 'landDataAnalysis',
-  //   component: LandDataAnalysis // 地块数据分析页面
-  // },
+  {
+    path: '/landDataAnalysis',
+    name: 'landDataAnalysis',
+    component: LandDataAnalysis // 地块数据分析页面
+  },
   // {
   //   path: '/land-monitoring',
   //   name: 'landMonitoring',
